@@ -9,7 +9,7 @@ This Blender plugin allows users to perform tasks in Blender using a reinforceme
 # Installation
 To install the plugin, follow these steps:
 
-Download the plugin file `reinforcement_learning.py` and save it to your Blender addons folder.
+Download the plugin file `BRL.py` and save it to your Blender addons folder.
 Start Blender and go to the preferences.
 In the Add-ons tab, search for "Reinforcement Learning" and enable the plugin.
 Save your preferences to make the plugin available every time you start Blender.
@@ -23,7 +23,7 @@ To input commands by typing, simply enter your command in the text field and pre
 To input commands using your microphone, press the microphone icon. The plugin will record your voice for 5 seconds and send the audio to the reinforcement learning model for execution. Note that you will need to have the `sounddevice` module installed to use this feature.
 
 # Code Overview
-The plugin is implemented in a single file, `reinforcement_learning.py`, which contains the following parts:
+The plugin is implemented in a single file, `BRL.py`, which contains the following parts:
 
 1. Import statements
 2. Custom operator classes for sending commands to the reinforcement learning model
