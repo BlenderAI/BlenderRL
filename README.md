@@ -1,5 +1,5 @@
-# BlenderRL
-A Reinforcement Learning agent for Blender involves defining a reward function that the agent will strive to maximize. This function is based on some objective, such as creating a specific 3D model, reiterating on an existing 3D model or animation, or something more general. RL agent for Blender 3D  maps all the controls of blender into actions.
+# BlenderRL (BRL)
+Blender Reinforcement Learning requires defining several key components such as the reward function, agent, environment, rewards, state, and interpreter. The purpose of the RL model is to create specific 3D models as prompted by the user, animate existing 3D models, or perform some other general task. The RL agent in Blender 3D is trained on all the controls of the software, mapping them to actions it can take to maximize the reward.
 
 
 # Blender Plugin for Reinforcement Learning
