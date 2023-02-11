@@ -32,9 +32,16 @@
 
 	// sidebar
 	$('.sidenav .sidelist a').on('click', function() {
+		//console.log('event triggered');
+		event.preventDefault();
 		$('.sidelist').removeClass('active');
-		$(this).parent().addClass('active');
+		$('.sidelist a').parent().removeClass('active');
+		$(this).parent().addClass('active parent');
+		//console.log($(this).parent());
+
+		
 	  });
+	  
 	  
 
 	// clipboard
