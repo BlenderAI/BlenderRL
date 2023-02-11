@@ -21,6 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 1.6;
+  --main-bg-color: #EA7600;
   color: #333;
 }
 
@@ -105,9 +106,9 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #FF0043;
+  background: var(--main-bg-color);;
   color: #fff;
-  border-color: #FF0043;
+  border-color: var(--main-bg-color);;
 }
 .btn-primary:active, .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary.active {
   background: #cc0036 !important;
@@ -116,8 +117,8 @@ h6, .h6 {
 
 .btn-outline-primary {
   background: transparent;
-  color: #FF0043;
-  border-color: #FF0043;
+  color: var(--main-bg-color);;
+  border-color: var(--main-bg-color);;
 }
 .btn-outline-primary:active, .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary.focus, .btn-outline-primary.active {
   background: #cc0036 !important;
@@ -188,7 +189,7 @@ select:focus {
 }
 
 a:hover {
-  color: #FF0043;
+  color: var(--main-bg-color);;
 }
 
 .slick-slide {
@@ -338,7 +339,7 @@ a:hover {
   color: #222;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #FF0043;
+  color: var(--main-bg-color);;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -382,7 +383,7 @@ a:hover {
   transform: translateY(-50%);
 }
 .search-wrapper button i {
-  color: #FF0043;
+  color: var(--main-bg-color);;
 }
 
 .card {
@@ -393,7 +394,7 @@ a:hover {
   padding: 35px;
 }
 .card-icon {
-  background: #FF0043;
+  background: var(--main-bg-color);;
   color: #fff;
   height: 55px;
   width: 60px;
@@ -426,7 +427,7 @@ a:hover {
   line-height: 42px;
   text-align: center;
   color: #fff;
-  background: #FF0043;
+  background: var(--main-bg-color);;
   border-radius: 6px;
 }
 
@@ -440,7 +441,7 @@ a:hover {
   transition: 0.2s ease;
 }
 .footer-menu a:hover {
-  color: #FF0043;
+  color: var(--main-bg-color);;
 }
 
 /* sidenav */
@@ -476,7 +477,7 @@ a:hover {
   top: 25%;
   height: 50%;
   width: 1px;
-  background: #FF0043;
+  background: var(--main-bg-color);;
 }
 .sidenav .parent ul {
   display: block;
@@ -521,7 +522,7 @@ a:hover {
   justify-content: space-between;
 }
 .pagination a {
-  color: #FF0043;
+  color: var(--main-bg-color);;
   font-size: 18px;
   font-weight: 500;
 }
@@ -550,7 +551,7 @@ a:hover {
   display: none;
 }
 .code-tabs .nav-tabs .nav-item.active {
-  background: #FF0043;
+  background: var(--main-bg-color);;
 }
 .code-tabs .nav-tabs .nav-item.active .nav-link {
   color: #fff;
@@ -563,7 +564,7 @@ pre {
   position: relative;
 }
 pre .copy-to-clipboard {
-  background: #FF0043;
+  background: var(--main-bg-color);;
   color: #fff;
   cursor: pointer;
   padding: 4px 5px;
@@ -592,7 +593,7 @@ pre .copy-to-clipboard {
   font-weight: 500;
 }
 .autocomplete-suggestions .autocomplete-suggestion.selected {
-  background: #FF0043;
+  background: var(--main-bg-color);;
 }
 
 .search-item a {
@@ -600,7 +601,7 @@ pre .copy-to-clipboard {
   display: block;
 }
 .search-item a:hover {
-  color: #FF0043;
+  color: var(--main-bg-color);;
 }
 .search-item:not(:last-child) {
   border-bottom: 1px solid #E2E2E2;
@@ -628,7 +629,7 @@ pre .copy-to-clipboard {
 }
 .form-group .form-control:focus {
   outline: 0;
-  border-color: #FF0043;
+  border-color: var(--main-bg-color);;
   box-shadow: none;
 }
 .form-group .custom-select {
@@ -702,7 +703,7 @@ pre .copy-to-clipboard {
 }
 .content a {
   text-decoration: underline;
-  color: #FF0043;
+  color: var(--main-bg-color);;
 }
 .content ol,
 .content ul {
@@ -726,7 +727,7 @@ pre .copy-to-clipboard {
   height: 8px;
   width: 8px;
   border-radius: 50%;
-  background: #FF0043;
+  background: var(--main-bg-color);;
   left: 3px;
   top: 8px;
 }
@@ -825,7 +826,7 @@ pre .copy-to-clipboard {
   font-size: 20px !important;
   color: #222;
   padding: 20px 40px;
-  border-left: 2px solid #FF0043;
+  border-left: 2px solid var(--main-bg-color);;
   margin: 40px 0;
   font-weight: bold;
   background: #FBFBFB;
