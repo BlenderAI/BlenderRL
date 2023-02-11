@@ -28,6 +28,15 @@
 		columnWidth: 1
 	});
 
+		  
+
+	// sidebar
+	$('.sidenav .sidelist a').on('click', function() {
+		$('.sidelist').removeClass('active');
+		$(this).parent().addClass('active');
+	  });
+	  
+
 	// clipboard
 	var clipInit = false;
 	$('code').each(function () {
