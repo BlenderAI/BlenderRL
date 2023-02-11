@@ -1,4 +1,18 @@
+# Apache License 2.0
 import bpy
+
+
+bl_info = {
+    "name": "BlenderAI",
+    "author": "Fredrick K",
+    "version": (0, 0, 0),
+    "blender": (3, 8, 0),
+    "location": "Anywhere",
+    "description": "AI Assistant for Blender can generates assets(model, materials)",
+    "doc_url": "https://github.com/BlenderAI/BlenderRL",
+    "tracker_url": "https://github.com/BlenderAI/BlenderRL/issues",
+    "category": "AI",
+}
 
 
 class BRL:
