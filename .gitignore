@@ -1,0 +1,10 @@
+blenderai/Thumbs.db
+blenderai/.DS_Store
+.dist
+blenderai/.tmp
+blenderai/.sass-cache
+blenderai/npm-debug.log
+blenderai/node_modules
+blenderai/package-lock.json
+blenderai/yarn.lock
+blenderai/netlify
