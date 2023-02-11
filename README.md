@@ -1,4 +1,6 @@
-https://blenderai.netlify.app/  [![Netlify Status](https://api.netlify.com/api/v1/badges/7c999fe1-0ef0-4794-8099-0aea6a9ed1c2/deploy-status)](https://app.netlify.com/sites/blenderai/deploys)
+https://blenderai.netlify.app/ 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7c999fe1-0ef0-4794-8099-0aea6a9ed1c2/deploy-status)](https://app.netlify.com/sites/blenderai/deploys)
+
 # BlenderRL (BRL)
 Blender Reinforcement Learning requires defining several key components such as the reward function, agent, environment, rewards, state, and interpreter. The purpose of the RL model is to create specific 3D models as prompted by the user, animate existing 3D models, or perform some other general task. The RL agent in Blender 3D is trained on all the controls of the software, mapping them to actions it can take to maximize the reward.
 
