@@ -1,0 +1,43 @@
+.navigation {
+  transition: .2s ease;
+
+  &.nav-bg {
+    background: $white;
+    @extend .shadow;
+  }
+
+  @include desktop {
+    .form-inline {
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.nav-item {
+  margin: 0;
+
+  .nav-link {
+    text-transform: capitalize;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $text-color-dark;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px;
+  font-size: 15px;
+  @include desktop {
+    padding: 10px;
+    display: block;
+  }
+}
