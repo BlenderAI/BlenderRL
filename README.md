@@ -1,45 +1,73 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7c999fe1-0ef0-4794-8099-0aea6a9ed1c2/deploy-status)](https://app.netlify.com/sites/blenderai/deploys)
-https://blenderai.netlify.app/ 
 # BlenderRL (BRL)
-Blender Reinforcement Learning requires defining several key components such as the reward function, agent, environment, rewards, state, and interpreter. The purpose of the RL model is to create specific 3D models as prompted by the user, animate existing 3D models, or perform some other general task. The RL agent in Blender 3D is trained on all the controls of the software, mapping them to actions it can take to maximize the reward.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7c999fe1-0ef0-4794-8099-0aea6a9ed1c2/deploy-status)](https://app.netlify.com/sites/blenderai/deploys)
 
+Blender Reinforcement Learning (BlenderAI) is an innovative AI-powered solution designed to automate 3D modeling, animation, and various Blender tasks using reinforcement learning (RL). By integrating Python Blender scripts and OpenUSD (Universal Scene Description), BlenderAI delivers a robust platform for creating, sharing, and managing 3D assets with ease.
 
-# Blender Plugin for Reinforcement Learning
-Introduction
-This Blender plugin allows users to perform tasks in Blender using a reinforcement learning model. The plugin provides a UI in the 3D viewport for users to input commands, either by typing or using their microphone. The commands are then sent to the reinforcement learning model, which performs the task automatically.
+---
 
-# Installation
-To install the plugin, follow these steps:
+## **Key Features**
+1. **Reinforcement Learning in Blender**:
+   - RL agents trained to perform complex Blender tasks by mapping software controls to optimal actions for specific goals.
+   - Applications include creating 3D models, animating existing models, and executing user-defined tasks.
 
-Download the plugin file `BRL.py` and save it to your Blender addons folder.
-Start Blender and go to the preferences.
-In the Add-ons tab, search for "Reinforcement Learning" and enable the plugin.
-Save your preferences to make the plugin available every time you start Blender.
-Usage
-The plugin adds a panel to the 3D viewport, which allows you to input commands either by typing or using your microphone. The commands are then sent to the reinforcement learning model for execution.
+2. **OpenUSD Integration**:
+   - **Interoperability**: Enables seamless data exchange across various 3D tools (e.g., Blender, Maya, Houdini).
+   - **Scalability**: Handles large, complex scenes efficiently using OpenUSD's hierarchical structure.
+   - **Collaboration**: Facilitates consistent asset sharing and collaborative workflows.
 
-# Typing Commands
-To input commands by typing, simply enter your command in the text field and press the "Submit" button. The plugin will send your command to the reinforcement learning model for execution.
+3. **Plugin for Blender**:
+   - **User-Friendly Interface**: Input commands via text or voice in Blender's 3D viewport.
+   - **Task Automation**: Commands are executed by the RL model, streamlining 3D creation.
 
-# Using Microphone
-To input commands using your microphone, press the microphone icon. The plugin will record your voice for 5 seconds and send the audio to the reinforcement learning model for execution. Note that you will need to have the `sounddevice` module installed to use this feature.
+---
 
-# Code Overview
-The plugin is implemented in a single file, `BRL.py`, which contains the following parts:
+## **Installation**
+1. Download the plugin file `BRL.py` and save it to your Blender addons folder.
+2. Open Blender and navigate to **Edit > Preferences > Add-ons**.
+3. Search for "Reinforcement Learning" and enable the plugin.
+4. Save preferences to make the plugin available every time Blender starts.
 
-1. Import statements
-2. Custom operator classes for sending commands to the reinforcement learning model
-3. UI panel for the 3D viewport
-4. `register` and un`register` functions
+---
 
-# Custom Operator Classes
-The plugin defines two custom operator classes: `RequestModelOperator` and `UseMicrophoneOperator`. The `RequestModelOperator` class sends the text entered by the user to the reinforcement learning model for execution. The `UseMicrophoneOperator` class records audio using the `sounddevice` module and sends the audio to the reinforcement learning model for execution.
+## **Usage**
+### **Typing Commands**
+- Enter commands in the provided text field and click "Submit" to execute tasks via the RL model.
 
-# UI Panel
-The plugin adds a UI panel to the 3D viewport, which contains a text field and buttons for entering commands. The panel is defined in the `draw` method of the ``ReinforcementLearningPanel`` class, which inherits from `bpy.types.Panel`. The panel contains two buttons, one for submitting text commands and one for recording audio commands.
+### **Using Microphone**
+- Click the microphone icon to record voice commands (5 seconds) and send them to the RL model.
+- Note: Install the `sounddevice` module for this feature.
 
-# Register and Unregister Functions
-The plugin provides `register` and `unregister` functions to enable and disable the plugin, respectively. The functions `register` and `unregister` the custom operator classes and the UI panel.
+---
 
-# Conclusion
-This Blender plugin provides a convenient way for users to interact with a reinforcement learning model and perform tasks in Blender. The plugin is easy to install and use, and provides a user-friendly interface for inputting commands. With the ability to record audio, the plugin opens up new possibilities for hands-free interaction with Blender.
+## **OpenUSD Workflow**
+1. **Exporting Assets**:
+   - Use OpenUSD to save generated 3D models, animations, and scenes for reuse in other software or workflows.
+2. **Data Interoperability**:
+   - Easily integrate BlenderAI assets with tools like Maya, Houdini, or Unreal Engine for a seamless pipeline.
+3. **Collaborative Training**:
+   - Store and share RL training data, such as scene configurations and control actions, using OpenUSD for reproducibility.
+
+---
+
+## **Code Overview**
+The plugin is implemented in a single file, `BRL.py`, which contains:
+1. **Import Statements**: Required modules for Blender and RL integration.
+2. **Custom Operator Classes**:
+   - `RequestModelOperator`: Sends user commands to the RL model.
+   - `UseMicrophoneOperator`: Records and processes audio commands.
+3. **UI Panel**:
+   - Adds a panel to Blender’s 3D viewport for text and voice input.
+4. **Register and Unregister Functions**:
+   - Manage plugin activation and deactivation.
+
+---
+
+## **Future Plans**
+- Extend RL agent capabilities to support more advanced modeling and animation tasks.
+- Leverage OpenUSD for RL model output, enabling faster workflows and multi-tool compatibility.
+- Introduce a feedback loop for user ratings to refine RL agent performance.
+
+---
+
+## **Conclusion**
+BlenderAI combines the power of Python Blender scripting and OpenUSD to redefine 3D content creation. With reinforcement learning at its core, this project bridges the gap between creativity and automation, making Blender tasks more efficient and accessible.
