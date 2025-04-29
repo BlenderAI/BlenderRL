@@ -18,7 +18,7 @@ Blender Reinforcement Learning (BlenderAI) is an innovative AI-powered solution 
 3. **Plugin for Blender**:
    - **User-Friendly Interface**: Input commands via text or voice in Blender's 3D viewport.
    - **Task Automation**: Commands are executed by the RL model, streamlining 3D creation.
-
+     
 ---
 
 ## **Installation**
@@ -68,6 +68,7 @@ The plugin is implemented in a single file, `BRL.py`, which contains:
 - Introduce a feedback loop for user ratings to refine RL agent performance.
 
 ---
+
 
 ## **Conclusion**
 BlenderAI combines the power of Python Blender scripting and OpenUSD to redefine 3D content creation. With reinforcement learning at its core, this project bridges the gap between creativity and automation, making Blender tasks more efficient and accessible.
